@@ -6,5 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-emerald-400"></body>
+  <body>
+    <header
+      class="bg-purple-700 w-full p-2 sm:p-1 px-4 sm:px-6 flex flex-row justify-between items-center sm:gap-12 text-2xl fixed top-0"
+    >
+      <!-- hamburger icon -->
+      <button class="sm:grid place-items-center hidden">
+        <ion-icon name="menu-outline" class="text-white font-bold"></ion-icon>
+      </button>
+      <!-- company's logo -->
+      <a href="" class="hidden sm:grid items-center"
+        ><ion-icon name="logo-amazon" class="sm:text-white"></ion-icon
+      ></a>
+
+      <!-- search icon and search bar wrapper -->
+      <div class="flex flex-row relative sm:relative items-center sm:justify-end w-full">
+        <!-- search icon -->
+        <ion-icon
+          name="search-outline"
+          class="absolute z-10 left-4  sm:hidden"
+        ></ion-icon>
+        <!-- search icon for >=640px -->
+        <ion-icon
+          name="search-outline"
+          class="sm:absolute z-10 sm:right-4  hidden sm:block"
+        ></ion-icon>
+        <!-- search bar -->
+        <input
+          type="search"
+          placeholder="Search here"
+          class="pl-10 p-1 w-[90%] sm:w-1/3 rounded-full text-xl"
+        />
+      </div>
+      <!-- user account icon -->
+      <button class="sm:grid place-content-center hidden">
+        <ion-icon name="person-outline" class="text-white font-bold"></ion-icon>
+      </button>
+      <!-- notification icon -->
+      <button class="grid place-content-center">
+        <ion-icon
+          name="notifications-outline"
+          class="text-white font-bold"
+        ></ion-icon>
+      </button>
+    </header>
+    <main class="min-h-screen mt-40 text-5xl">
+      <h1>Vansh is an excellent tester</h1>
+      <h1>Vansh is an excellent tester</h1>
+      <h1>Vansh is an excellent tester</h1>
+      <h1>Vansh is an excellent tester</h1>
+    </main>
+    <footer
+      class="bg-purple-700 p-6 flex flex-row justify-between text-4xl fixed bottom-0 w-full text-white"
+    >
+      <a href="" class="w-40"
+        ><div class="grid place-items-center">
+          <ion-icon
+            name="home-outline"
+            class="text-7xl text-white font-bold"
+          ></ion-icon
+          >Home
+        </div></a
+      >
+      <a href="" class="w-40"
+        ><div class="grid place-items-center">
+          <ion-icon
+            name="bookmarks-outline"
+            class="text-7xl text-white font-bold"
+          ></ion-icon
+          >Collection
+        </div></a
+      >
+      <a href="" class="w-40"
+        ><div class="grid place-items-center">
+          <ion-icon
+            name="compass-outline"
+            class="text-7xl text-white font-bold"
+          ></ion-icon
+          >Discover
+        </div></a
+      >
+      <a href="" class="w-40"
+        ><div class="grid place-items-center">
+          <ion-icon
+            name="search-outline"
+            class="text-7xl text-white font-bold"
+          ></ion-icon
+          >Search
+        </div></a
+      >
+      <a href="" class="w-40"
+        ><div class="grid place-items-center">
+          <ion-icon
+            name="menu-outline"
+            class="text-7xl text-white font-bold"
+          ></ion-icon
+          >More
+        </div></a
+      >
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
