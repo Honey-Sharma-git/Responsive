@@ -20,16 +20,18 @@
       ></a>
 
       <!-- search icon and search bar wrapper -->
-      <div class="flex flex-row relative sm:relative items-center sm:justify-end w-full">
+      <div
+        class="flex flex-row relative sm:relative items-center sm:justify-end w-full"
+      >
         <!-- search icon -->
         <ion-icon
           name="search-outline"
-          class="absolute z-10 left-4  sm:hidden"
+          class="absolute z-10 left-4 sm:hidden"
         ></ion-icon>
         <!-- search icon for >=640px -->
         <ion-icon
           name="search-outline"
-          class="sm:absolute z-10 sm:right-4  hidden sm:block"
+          class="sm:absolute z-10 sm:right-4 hidden sm:block"
         ></ion-icon>
         <!-- search bar -->
         <input
@@ -50,20 +52,115 @@
         ></ion-icon>
       </button>
     </header>
-    <main class="min-h-screen mt-40 text-5xl">
-      <h1>Vansh is an excellent tester</h1>
-      <h1>Vansh is an excellent tester</h1>
-      <h1>Vansh is an excellent tester</h1>
-      <h1>Vansh is an excellent tester</h1>
+    <main
+      class="min-h-[200vh] mt-12 sm:mt-10 p-4 bg-[url('/build/Images/backdrop-6.jpg')] bg-cover bg-no-repeat"
+    >
+      <article class="flex flex-col items-center justify-between gap-8">
+        <h2 class="border-b-2 text-lg font-bold">FEATURED LIST</h2>
+        <section
+          class="flex flex-row sm:gap-4 gap-8 p-4 w-96 sm:w-full sm:overflow-hidden overflow-x-scroll overflow-y-hidden"
+        >
+          <!-- Best books ever tile -->
+          <article>
+            <a href="">
+              <figure
+                class="bg-gray-200/30 h-44 w-52 rounded-xl backdrop-blur-sm grid place-content-center p-2"
+              >
+                <img
+                  src="/build/Images/best-books-ever.svg"
+                  alt="Best books ever"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="font-bold">Best Books Ever</h3>
+              <p class="text-xs text-white">125,331 books</p>
+            </a>
+          </article>
+          <!-- books that everyone should read at least once -->
+          <article>
+            <a href="">
+              <figure
+                class="bg-gray-200/30 h-44 w-52 rounded-xl backdrop-blur-sm grid place-content-center p-2"
+              >
+                <img
+                  class="overflow-hidden block w-full h-full"
+                  src="/build/Images/books-that-everyone-should-read-at-least-once.svg"
+                  alt="Books that everyone should read at least once"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="font-bold">
+                Books everyone must
+                <span class="whitespace-nowrap">read at least once</span>
+              </h3>
+              <p class="text-xs text-white">125,331 books</p>
+            </a>
+          </article>
+          <!-- best young adults books -->
+          <article>
+            <a href="">
+              <figure
+                class="bg-gray-200/30 h-44 w-52 rounded-xl backdrop-blur-sm grid place-content-center p-2"
+              >
+                <img
+                  src="/build/Images/best-young-adult-books.svg"
+                  alt="Best Young Adults Books"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="font-bold">Best Young Adults Books</h3>
+              <p class="text-xs text-white">125,331 books</p>
+            </a>
+          </article>
+          <!-- Books that should be made into movies -->
+          <article>
+            <a href="">
+              <figure
+                class="bg-gray-200/30 h-44 w-52 rounded-xl backdrop-blur-sm grid place-content-center p-2"
+              >
+                <img
+                  class="overflow-hidden block w-full h-full"
+                  src="/build/Images/books-that-should-be-made-into-movies.svg"
+                  alt="Books that should be made into movies"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="font-bold">Books that should be made into movies</h3>
+              <p class="text-xs text-white">125,331 books</p>
+            </a>
+          </article>
+          <!-- Best book of 20th century -->
+          <article>
+            <a href="">
+              <figure
+                class="bg-gray-200/30 h-44 w-52 rounded-xl backdrop-blur-sm grid place-content-center p-2"
+              >
+                <img
+                  src="/build/Images/best-books-of-the-20th-century.svg"
+                  alt="Best books of 20th century"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 class="font-bold">Best books of 20th century</h3>
+              <p class="text-xs text-white">125,331 books</p>
+            </a>
+          </article>
+        </section>
+        <button
+          class="flex flex-row justify-center border-2 sm:w-1/3 border-black w-full p-2"
+        >
+          SEE MORE LIST
+        </button>
+      </article>
     </main>
     <footer
-      class="bg-purple-700 p-6 flex flex-row justify-between text-4xl fixed bottom-0 w-full text-white"
+      class="bg-purple-700 p-2 px-1 flex flex-row justify-between text-l fixed sm:static bottom-0 w-full text-white"
     >
       <a href="" class="w-40"
         ><div class="grid place-items-center">
           <ion-icon
             name="home-outline"
-            class="text-7xl text-white font-bold"
+            class="text-2xl text-white font-bold"
           ></ion-icon
           >Home
         </div></a
@@ -72,7 +169,7 @@
         ><div class="grid place-items-center">
           <ion-icon
             name="bookmarks-outline"
-            class="text-7xl text-white font-bold"
+            class="text-2xl text-white font-bold"
           ></ion-icon
           >Collection
         </div></a
@@ -81,7 +178,7 @@
         ><div class="grid place-items-center">
           <ion-icon
             name="compass-outline"
-            class="text-7xl text-white font-bold"
+            class="text-2xl text-white font-bold"
           ></ion-icon
           >Discover
         </div></a
@@ -90,7 +187,7 @@
         ><div class="grid place-items-center">
           <ion-icon
             name="search-outline"
-            class="text-7xl text-white font-bold"
+            class="text-2xl text-white font-bold"
           ></ion-icon
           >Search
         </div></a
@@ -99,7 +196,7 @@
         ><div class="grid place-items-center">
           <ion-icon
             name="menu-outline"
-            class="text-7xl text-white font-bold"
+            class="text-2xl text-white font-bold"
           ></ion-icon
           >More
         </div></a
