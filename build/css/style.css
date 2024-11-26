@@ -591,12 +591,12 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-64 {
+  margin-bottom: 16rem;
 }
 
 .mt-12 {
@@ -605,18 +605,6 @@ video {
 
 .mt-16 {
   margin-top: 4rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
-.mb-64 {
-  margin-bottom: 16rem;
 }
 
 .block {
@@ -869,6 +857,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-5 {
