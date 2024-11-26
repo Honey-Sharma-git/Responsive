@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- HEADER SECTION -->
     <header
       class="bg-[#f4f1ea] w-full p-2 sm:p-1 px-4 sm:px-6 flex flex-row justify-between items-center sm:gap-12 text-2xl fixed top-0 border-b shadow-md"
     >
@@ -52,7 +53,92 @@
         ></ion-icon>
       </button>
     </header>
-    <main></main>
+    <main class="mt-16">
+      <!-- FRIEND'S POST UPDATE CARD-1 -->
+      <article class="flex flex-col items-center p-4">
+        <section class="flex flex-row items-center w-full gap-4">
+          <!-- FRIEND'S PROFILE PIC + NAME + TIME + RATINGS -->
+          <figure class="w-16 aspect-square rounded-full">
+            <!-- FRIEND'S PROFILE PIC -->
+            <a href=""
+              ><img
+                src="/build/Images/profile-pic.png"
+                alt=""
+                class="w-16 aspect-square rounded-full"
+            /></a>
+          </figure>
+          <!-- FRIEND'S NAME + RATINGS + TIME -->
+          <div class="flex flex-col text-lg">
+            <div class="flex flex-row items-center space-x-1">
+              <h2 class="font-bold text-emerald-800">
+                <!-- FRIEND'S NAME -->
+                <a href="">David</a>
+              </h2>
+              <p>rated it</p>
+              <!-- STAR RATINGS -->
+              <div class="space-x-0 flex flex-row items-center">
+                <ion-icon name="star" class="text-orange-500 m-0"></ion-icon>
+                <ion-icon name="star" class="text-orange-500 m-0"></ion-icon>
+                <ion-icon name="star" class="text-orange-500 m-0"></ion-icon>
+                <ion-icon name="star" class="text-gray-300 m-0"></ion-icon>
+                <ion-icon name="star" class="text-gray-300 m-0"></ion-icon>
+              </div>
+            </div>
+            <p class="">
+              <!-- POST TIME AND DATE -->
+              Nov 10 at 5:15 pm
+            </p>
+          </div>
+        </section>
+        <section class="flex flex-row">
+          <!-- BOOK COVER PIC + BOOK TITLE + AUTHOR'S NAME -->
+          <figure class="w-20 aspect-auto">
+            <!-- BOOK COVER PIC -->
+            <img
+              src="/build/Images/books/Dopamine-detox.jpg"
+              alt=""
+              class="w-20 aspect-auto"
+            />
+          </figure>
+          <h2>
+            <!-- BOOK TITLE -->
+            Dopamine Detox : A Short Guide to Remove Distractions and Get Your
+            Brain to Do Hard Things
+          </h2>
+          <p>
+            <!-- AUTHOR'S NAME -->
+            by <a href="">Thibaut Meurisse</a>
+          </p>
+          <button>
+            Want to Read <ion-icon name="caret-down-sharp"></ion-icon>
+          </button>
+        </section>
+        <section>
+          <!-- BOOK REVIEW + PROGRESS BAR + PAGE READ SECTION-->
+          <p>
+            <!-- BOOK REVIEW -->
+            I read the whole book in just 2 hours. Best book for social media
+            addicted and distracted people. Read this book and get rid of
+            hijacking your brain.
+          </p>
+          <div>
+            <!-- PROGRESS BAR LIGHT -->
+            <div>
+              <!-- PROGRESS BAR DAR -->
+            </div>
+          </div>
+          <p>
+            <!-- PAGE READ PROGRESS -->
+          </p>
+        </section>
+        <section>
+          <!-- LIKE & COMMENT SECTION -->
+          <a href="">Like</a><a href="">Comment</a>
+          <ion-icon name="thumbs-up-sharp"></ion-icon>
+          <p>2</p>
+        </section>
+      </article>
+    </main>
     <!--  FOOTER SECTION -->
     <footer
       class="bg-[#f4f1ea] p-2 px-1 flex flex-row justify-between text-l fixed sm:static bottom-0 w-full text-black"
@@ -75,7 +161,7 @@
           >Collection
         </div></a
       >
-      <a href="" class="w-40"
+      <a href="/build/discover.html" class="w-40"
         ><div class="grid place-items-center">
           <ion-icon
             name="compass-outline"
