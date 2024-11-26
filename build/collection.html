@@ -7,11 +7,58 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="flex flex-col items-center p-4">
+    <header
+      class="bg-[#f4f1ea] w-full p-2 sm:p-1 px-4 sm:px-6 flex flex-row justify-between items-center sm:gap-12 text-2xl fixed top-0 border-b shadow-md"
+    >
+      <!-- hamburger icon -->
+      <button class="sm:grid place-items-center hidden">
+        <ion-icon name="menu-outline" class="text-black font-bold"></ion-icon>
+      </button>
+      <!-- company's logo -->
+      <a href="" class="hidden sm:grid items-center"
+        ><ion-icon name="logo-amazon" class="sm:text-black"></ion-icon
+      ></a>
+
+      <!-- search icon and search bar wrapper -->
+      <div
+        class="flex flex-row relative sm:relative items-center sm:justify-end w-full"
+      >
+        <!-- search icon -->
+        <ion-icon
+          name="search-outline"
+          class="absolute z-10 left-4 sm:hidden"
+        ></ion-icon>
+        <!-- search icon for >=640px -->
+        <ion-icon
+          name="search-outline"
+          class="sm:absolute z-10 sm:right-4 hidden sm:block"
+        ></ion-icon>
+        <!-- search bar -->
+        <input
+          type="search"
+          placeholder="Search here"
+          class="pl-10 p-1 w-[90%] sm:w-1/3 rounded-full text-xl"
+        />
+      </div>
+      <!-- user account icon -->
+      <button class="sm:grid place-content-center hidden">
+        <ion-icon name="person-outline" class="text-black font-bold"></ion-icon>
+      </button>
+      <!-- notification icon -->
+      <button class="grid place-content-center">
+        <ion-icon
+          name="notifications-outline"
+          class="text-black font-bold"
+        ></ion-icon>
+      </button>
+    </header>
+
+    <!-- HEADER SECTION FOR 2024 READING CHALLENGE -->
+    <header class="flex flex-col items-center p-4 mt-16">
       <h1 class="font-bold text-xl w-full text-center">
         2024 READING CHALLENGE
       </h1>
-      <hr class="w-1/3 my-2 mb-4 bg-gray-300 h-[3px]" />
+      <hr class="w-1/3 my-2 mb-4 bg-gray-300 h-[2px]" />
       <!-- LINK TO USER'S READING CHALLENGE -->
       <a href="" class="w-full">
         <section class="flex flex-row gap-6 p-4 shadow-md rounded-xl border">
@@ -41,7 +88,7 @@
     <main class="flex flex-col items-center p-4">
       <!-- SHELVES SECTION -->
       <h2 class="font-bold text-xl w-full text-center">SHELVES</h2>
-      <hr class="w-1/3 my-2 mb-4 bg-gray-300 h-[3px]" />
+      <hr class="w-1/3 my-2 mb-4 bg-gray-300 h-[2px]" />
       <button class="border-2 border-gray-300 p-4 px-6 font-bold mb-4">
         Update your reading progress
       </button>
@@ -142,6 +189,123 @@
         <a href="" class="text-emerald-700 font-bold text-lg m-4">SEE ALL</a>
         <hr class="w-full my-2 mb-4 bg-gray-300 h-[2px]" />
       </article>
+      <!-- FOR BOOK TAGS -->
+      <article class="w-full flex flex-col items-center">
+        <h2 class="font-bold text-xl w-full text-center">TAGS</h2>
+        <hr class="w-1/3 my-2 mb-4 bg-gray-300 h-[2px]" />
+        <section class="w-full flex flex-col items-center">
+          <section class="flex flex-row flex-wrap justify-center gap-2 m-4 p-2">
+            <!-- LIST OF TAGS AS LINKS -->
+            <a
+              href=""
+              class="bg-[#dfecea] text-[#003b39] p-2 rounded-full px-4 flex justify-center items-center text-sm leading-4"
+              >drama (1)</a
+            >
+            <a
+              href=""
+              class="bg-[#dfecea] text-[#003b39] p-2 rounded-full px-4 flex justify-center items-center text-sm leading-4"
+              >fiction (16)</a
+            >
+            <a
+              href=""
+              class="bg-gray-100 text-black p-2 rounded-full px-4 flex justify-center items-center text-sm leading-4"
+              >gift-me (0)</a
+            >
+            <a
+              href=""
+              class="bg-[#dfecea] text-[#003b39] p-2 rounded-full px-4 flex justify-center items-center text-sm leading-4"
+              >nonfiction (11)</a
+            >
+            <a
+              href=""
+              class="bg-[#dfecea] text-[#003b39] p-2 rounded-full px-4 flex justify-center items-center text-sm leading-4"
+              >poetry (1)</a
+            >
+            <a
+              href=""
+              class="bg-[#dfecea] text-[#003b39] p-2 rounded-full px-4 flex justify-center items-center text-sm leading-4"
+              >psychology (26)</a
+            >
+            <a
+              href=""
+              class="bg-[#dfecea] text-[#003b39] p-2 rounded-full px-4 flex justify-center items-center text-sm leading-4"
+              >romance (4)</a
+            >
+            <a
+              href=""
+              class="bg-[#dfecea] text-[#003b39] p-2 rounded-full px-4 flex justify-center items-center text-sm leading-4"
+              >self-help (13)</a
+            >
+            <a
+              href=""
+              class="bg-[#dfecea] text-[#003b39] p-2 rounded-full px-4 flex justify-center items-center text-sm leading-4"
+              >spirituality (13)</a
+            >
+          </section>
+          <!-- SEE ALL TAGS LINK -->
+          <a href="" class="text-emerald-700 font-bold text-lg m-4">SEE ALL</a>
+          <hr class="w-full my-2 mb-4 bg-gray-300 h-[2px]" />
+        </section>
+      </article>
     </main>
+
+    <!--  FOOTER SECTION -->
+    <footer
+      class="bg-[#f4f1ea] p-2 px-1 flex flex-row justify-between text-l fixed sm:static bottom-0 w-full text-black"
+    >
+      <a href="" class="w-40"
+        ><div class="grid place-items-center">
+          <ion-icon
+            name="home-outline"
+            class="text-2xl text-black font-bold"
+          ></ion-icon
+          >Home
+        </div></a
+      >
+      <a href="/build/collection.html" class="w-40"
+        ><div class="grid place-items-center">
+          <ion-icon
+            name="bookmarks-outline"
+            class="text-2xl text-black font-bold"
+          ></ion-icon
+          >Collection
+        </div></a
+      >
+      <a href="" class="w-40"
+        ><div class="grid place-items-center">
+          <ion-icon
+            name="compass-outline"
+            class="text-2xl text-black font-bold"
+          ></ion-icon
+          >Discover
+        </div></a
+      >
+      <a href="" class="w-40"
+        ><div class="grid place-items-center">
+          <ion-icon
+            name="search-outline"
+            class="text-2xl text-black font-bold"
+          ></ion-icon
+          >Search
+        </div></a
+      >
+      <a href="" class="w-40"
+        ><div class="grid place-items-center">
+          <ion-icon
+            name="menu-outline"
+            class="text-2xl text-black font-bold"
+          ></ion-icon
+          >More
+        </div></a
+      >
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
