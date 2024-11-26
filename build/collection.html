@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My books</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="flex flex-col items-center p-4">
+      <h1 class="font-bold text-xl w-full text-center">
+        2024 READING CHALLENGE
+      </h1>
+      <hr class="w-1/3 my-2 mb-4 bg-gray-300 h-[3px]" />
+      <!-- LINK TO USER'S READING CHALLENGE -->
+      <a href="" class="w-full">
+        <section class="flex flex-row gap-6 p-4 shadow-md rounded-xl border">
+          <figure class="h-16 aspect-square rounded-full">
+            <img
+              src="/build/Images/profile-pic.png"
+              alt="Profile picture"
+              loading="lazy"
+              title="Profile-pic"
+              class="h-16 aspect-square rounded-full"
+            />
+          </figure>
+          <!-- READING CHALLENGE STATUS -->
+          <div class="w-full">
+            <h3 class="text-lg font-bold">You've read 15 of 25 books</h3>
+            <section class="flex flex-row items-center gap-3">
+              <!-- FOR PROGRESS BAR -->
+              <div class="bg-gray-300 h-2 w-full rounded-full">
+                <div class="bg-black w-3/5 h-2 rounded-full"></div>
+              </div>
+              <p>60%</p>
+            </section>
+          </div>
+        </section>
+      </a>
+    </header>
+  </body>
+</html>
